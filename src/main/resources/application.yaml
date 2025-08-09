@@ -1,0 +1,8 @@
+spring:
+  application:
+    name:CrptApi
+crpt-api:
+  base-url: ${CRPT_API_BASE_URL:https://ismp.crpt.ru}
+  introduce-goods-api: {CRPT_API_INTRODUCE_GOODS:/api/v3/lk/documents/commissioning/contract/create}
+  time-unit: ${CRPT_API_TIME_UNIT:SECONDS}
+  request-limit: ${CRPT_API_REQUEST_LIMIT:5}
